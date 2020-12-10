@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="Proyecto_2.App.Layout" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <!---enlaces a estilo css --->
+    <title>App Empleados</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link href="CSS/estilos.css" rel="stylesheet" />    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class ="estiloBody">
+    <form id="form1" runat="server">
+        <div>
+            <!---Menu --->
+                <header class="estiloHeader">
+        <nav class="menuNav">
+            <ul class="menuUl">
+                <li class="menuLi"> <a class="menuLink" href="./Default.aspx"> Home </a></li>
+                <li class="menuLi"> <a class="menuLink" href="./Datos.aspx"> Datos </a></li>
+                <li class="menuLi"> <a class="menuLink" href="./Formulario.aspx"> Formulario </a></li>
+                <li class="menuLi"> <a class="menuLink" href="./Nosotros.aspx"> Nosotros </a></li>
+            </ul>
+        </nav>
+    </header>
+            <!---fin Menu --->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <!---Footer     --->
+            <footer class="estiloFooter">
+        <h3 class="textoFooter"> by: Juan Carlos Ardila</h3>       
+        <div class="contenedorGib">
+            <div> 
+                <a href="https://github.com/Juan9025"> <img class="ico" src="Pic/github.png" alt=""></a>
+           </div> 
+           <div> 
+            <small> jcardila39@misena.edu.co </small>
+           </div>
+        </div>
+    </footer>
+            <!---Fin Footer--->
+        </div>
+    </form>
+</body>
+</html>
